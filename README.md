@@ -1,4 +1,4 @@
-# Cartoon-GIFs
+# Gif-O-Rama
 Week 3 / Unit-6 HW / APIs
 
 <p>A simple web app used to generate a short list of GIfs based on the user's search parameters. To accomplish this, Giphy's API was used to return gif results. The gifs have been coded to remain static on load until the user clicks them to activate the animated gif.<p>
