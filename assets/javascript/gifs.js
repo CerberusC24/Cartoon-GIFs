@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     var randomOffset = Math.floor(Math.random() * 99) + 1;
 
-    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${category}&api_key=B5i5qlaT7nNCAuYpn3W91mkFm8pEI2pQ&limit=10&offset=${randomOffset}`
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${category}&api_key=B5i5qlaT7nNCAuYpn3W91mkFm8pEI2pQ&limit=15&offset=${randomOffset}`
 
     $.ajax({
         url: queryURL,
@@ -97,6 +97,7 @@ $(document).ready(function () {
           gifResults.attr("current-state", "still");
           gifResults.addClass("gif");
 
+          gifDiv.addClass("card bg-dark text-light m-2");
           gifDiv.prepend(p);
           gifDiv.prepend(gifResults);
 
