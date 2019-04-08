@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>GIF-O-Rama</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand custom-brand" href="index.html">Cerberus Web Development</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://cerberusc24.github.io/Bootstrap-Portfolio/">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://cerberusc24.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://cerberusc24.github.io/Bootstrap-Portfolio/resume.html">Resume <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://cerberusc24.github.io/Bootstrap-Portfolio/contact.html">Contact <span
+              class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid bg-warning mb-3">
+    <div class="container">
+      <h1 class="display-4">GIF-O-Rama</h1>
+      <p class="lead">GIF ma'am. Like the peanutbutter, but spelt different.</p>
+      <hr class="my-4">
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <input type="text" class="mb-2 form-control form-horizontal input-group" id="gif-input"
+              aria-describedby="gifSearch" placeholder="Search GIF Categories">
+          </div>
+          <div class="col-12 col-md-2">
+            <input id="add-gif" type="submit" class="btn btn-dark" value="Add a Category">
+          </div>
+        </div>
+      </div>
+
+      <!-- Gif Buttons Will Be Generated Here -->
+      <div class="container text-center justify-content-around">
+        <h3>Some Popular Categories:</h3>
+        <div id="button-display"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container justify-content-around">
+    <div class="card">
+      <h4 class="card-header text-center">Results</h4>
+      <div class="card-body bg-dark text-light text-center">
+        <row id="gif-display" class="card-body text-center">
+        </row>
+      </div>
+    </div>
+  </div>
+
+  <footer class=" bg-dark text-light padding-5 ">
+    <div class="container text-center mt-5">
+      Copyright &copy;
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/gifs.js"></script>
+</body>
+
+</html>
